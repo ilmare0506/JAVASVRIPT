@@ -1,0 +1,16 @@
+body{
+    margin:0;
+    padding:0;
+    background:black;
+    width:100%;
+    text-align:center
+    
+}
+#gameBoard{
+    width:80%;
+    height:80vh;
+    position:absolute;            
+    top: 50%;                        
+    transform: translate(-50%, -50%) ;
+    border:2px dotted white
+}
