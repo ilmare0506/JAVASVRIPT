@@ -44,10 +44,8 @@ class Player{
             this.position.y,
             this.width,
             this.height,
-            
-            );
-        
-    }
+        );
+	}
 
     shoot(){
         missiles.push(new Missile({
@@ -62,17 +60,17 @@ class Player{
    
     update(){
         if(this.image){
-       if(keys.ArrowLeft.pressed && this.position.x >=0){
-           this.velocity.x = -5;
-       }
-      else if(keys.ArrowRight.pressed && this.position.x <= world.width - this.width){
-        this.velocity.x = 5;
-        }
-    else{this.velocity.x =0;}
+			if(keys.ArrowLeft.pressed && this.position.x >=0){
+				this.velocity.x = -5;
+			}
+			else if(keys.ArrowRight.pressed && this.position.x <= world.width - this.width){
+				this.velocity.x = 5;
+			}
+			else{this.velocity.x =0;}
         this.position.x += this.velocity.x;
         this.draw();
-    }
-}
+		}
+	}
 }  
 
 class Missile{
